@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Pragati+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&family=Pragati+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Pragati+Narrow&display=swap');
+
+
+:root{
+    --cor-texto-principal: #f6f6f6;
+    --cor-fundo-principal: #0D1128;
+    --cor-preto: #000000;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    
+}
+body{
+    background-color: var(--cor-fundo-principal);
+    display: flex;
+    min-height: 100%;
+    width: 100vh;
+    
+}
+#cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#pagina_um {
+   display: flex;
+   max-width: 64%;
+   
+}
+#logo_escrita{
+
+margin-left: 33%;
+width: 205.56px;
+height: 37px;
+left: 43px;
+top: 22px;
+;
+
+}
+#imagem-logo{
+
+position:absolute;
+width: 107px;
+height: 107px;
+left: 201px;
+top: -7px;
+ 
+}
+
+#imagem-linha{
+position: absolute;
+width: 1985px;
+height: 21px;
+left: -625px;
+top: 88px;
+}
+
+
+.Home{
+
+position: absolute;
+width: 60px;
+height: 30px;
+left: 449px;
+top: 37px;
+font-family: 'Poppins', sans-serif;
+font-weight: 100;
+font-size: 20px;
+text-align: center;
+text-decoration: none;
+color: var(--cor-texto-principal);
+margin-left: 8%;
+font-weight: lighter;
+
+}
+
+.Home:hover{
+
+    color: #4EEAC5;
+    font-weight: bold;
+    font-size: 19px;
+    
+}
+
+
+
+.contato{
+
+position: absolute;
+width: 168px;
+height: 35px;
+left: 618px;
+top: 37px;
+
+}
+
+.equipe{
+
+position: absolute;
+width: 168px;
+height: 35px;
+left: 500px;
+top: 37px;
+
+}
+
+
+
+.voluntario{
+
+    width: 206px;
+    height: 30px;
+    left: 792px;
+    top: 37px; 
+    color: var(--cor-texto-principal);
+    
+}
+
+.denuncia{
+    width: 189px;
+    height: 43px;
+    left: 1044px;
+    top: 31px;
+    border-radius: 11px;
+    color: red;
+    background: #111D36;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    
+
+}
+
+#retangulo_101{
+position: absolute;
+width: 500px;
+height: 400px;
+left: -3px;
+top: 259px;
+filter: blur(2px);
+
+}
+
+#retangulo_102{
+display: flex;
+position: absolute;
+width: 281px;
+height: 397px;
+left: 1080px;
+top: 100px;
+filter: blur(2px);
+}
+
+#texto1{
+
+
+line-height: 50px;
+font-size: 30px;
+font-family: 'Inter', sans-serif;
+color: var(--cor-texto-principal);
+position: absolute;
+text-align: center;
+width: 550px;
+height: 300px;
+left: 60px;
+top: 200px;
+box-shadow: 0px 0px 15px 3px #2a776580;
+border-radius: 25px;
+
+}
+
+#foto_planeta{
+display: flex;
+
+position: absolute;
+width: 410px;
+height: 400px;
+left: 850px;
+top: 200px;
+
+
+}
+
+#foto_fundo{
+
+position: absolute;
+width: 1358px;
+height: 900px;
+left: 1px;
+top: 575px;
+filter:drop-shadow(0px 20px 80px 50px #00000080);
+
+}
+
+#retangulo_100{
+display: flex;
+flex-direction: column;
+position: absolute;
+width: 146px;
+height: 690px;
+left: -3px;
+top: 665px;
+
+}
+
+#imagens{
+    display: flex;
+    flex-direction: column;
+    width: 138px;
+    height: 138px;
+    position:relative;
+    margin-top: 35%;
+    right: 170px;
+    top: 699px;
+    
+}
+
+.text_secundario{
+ 
+position: absolute;
+width: 829px;
+height: 100px;
+left: 300px;
+top: 700px;
+font-family: 'Inter';
+font-weight: 400;
+font-size: 50px;
+line-height: 67px;
+text-align: center;
+color: #27E0E0;
+
+
+}
+
+.text_paragrafo{
+ 
+position: absolute;
+width: 714px;
+left: 370px;
+top: 900px;
+font-family: 'Inter';
+font-weight: 400;
+font-size: 30px;
+text-align: center;
+color: #CDD1D3;
+
+
+}
+
