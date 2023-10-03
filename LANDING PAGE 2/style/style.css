@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#degrade-fundo{
+    height: 800px;
+    z-index: -1;
+}
+
+#forest{
+    
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    align-self: center;
+    justify-self: center;
+    margin-top: 20%;
+    width: 100%;
+}
+
+.papu{
+    background-image: linear-gradient(180deg, #238A71 0%, #104747 30.62%, #092933 41.56%, #001018 56.15%, #000 66.56%);
+    display: flex;
+    z-index: -2;
+    
+}
