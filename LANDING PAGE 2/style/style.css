@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    
+}
+
+.gradientForest{
+    object-fit: cover;
+    object-position: center;
+    background-image: linear-gradient(180deg, #238A71 0%, #104747 54.58%, #092933 72.81%, #001018 87.4%, #000 100%);
+}
+
+#degrade-fundo{
+    display: flex;
+    height: 10000px;
+    max-height: 500px;
+    z-index: -1;
+}
+
+#forest{
+    /* display: flex; */
+    z-index: 1;
+    /* align-self: flex-end; */
+    /* justify-self: center; */
+    object-fit: cover;
+    object-position: center;
+}
+
+#blockBlackForest{
+    display: flex;
+    width: 100%;
+    min-height: 200px;
+    background-color: #000;
+}
+
+.footer{
+    display: flex;
+    width: 100%;
+    height: 300px;
+    background-color: #151517;
+    justify-content: center;
+}
+
+.navFooter
+{
+    display: flex;
+    margin-top: 3%;
+    background-color: #0f2719;
+    height: 10%;
+    width: 85%;
+}
+.lineFooter{
+    display: flex;
+    width: 100%;
+    height: 1.5px;
+    background: #7BDCC5;
+  }
+
+a
+{
+    display: flex;
+    justify-content: space-between;
+    min-width: 10%;
+    width: 20%;
+    color: #F6F6F6;
+
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    white-space: nowrap;
+    font-style: normal;
+    line-height: normal;
+}
+
+a:hover
+{
+    color: #1AFFC8;
+}
+
+.caramba{
+    display: flex;
+}
