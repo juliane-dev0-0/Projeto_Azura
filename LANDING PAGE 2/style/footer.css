@@ -1,0 +1,247 @@
+.gradient-footer {
+
+    display: flex;
+    margin-top: 3.5%;
+    width: 100%;
+    height: 200px;
+    flex-shrink: 0;
+    background: linear-gradient(180deg, rgba(7, 7, 7, 0.00) 23.83%, rgba(47, 90, 80, 0.19) 64.91%, rgba(34, 107, 90, 0.31) 83.01%, rgba(22, 224, 176, 0.17) 100%);
+}
+
+
+.fotter-items {
+    margin-top: 10%;
+}
+
+.align-line-fotter {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.container-fotter {
+
+    display: flex;
+    justify-content: end;
+}
+
+.fotter {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 325px;
+    flex-shrink: 0;
+    background: linear-gradient(180deg, #151517 44.27%, #152F2C 79.52%, rgba(8, 73, 65, 0.74) 100%);
+    z-index: -1;
+}
+
+.block-var-fotter {
+
+
+    display: flex;
+    margin-left: 60%;
+    margin-top: 1%;
+
+
+}
+
+.line-fotter {
+
+    display: flex;
+    width: 90%;
+    height: 2px;
+    stroke-width: 2px;
+    background-color: #7BDCC5;
+}
+
+
+.fotter-container {
+
+
+    display: flex;
+}
+
+.var-fotter {
+
+    display: flex;
+    text-decoration: none;
+    color: #F6F6F6;
+    font-size: 14px;
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: 500;
+    margin-right: 5%;
+    transition: text-shadow 0.2s;
+}
+
+.var-fotter:hover {
+
+    color: #1AFFC8;
+    text-shadow: 0px 0px 20px #00ffc3;
+    font-weight: 500;
+    z-index: 1;
+
+}
+
+.var-fotter-voluntario {
+
+
+
+    display: flex;
+    text-decoration: none;
+    color: #68EFC9;
+    font-size: 14px;
+    white-space: nowrap;
+    font-style: normal;
+    font-weight: 500;
+    margin-right: 5%;
+    transition: text-shadow 0.2s;
+
+}
+
+.var-fotter-voluntario:hover {
+
+    display: flex;
+    color: #1AFFC8;
+    text-shadow: 0px 0px 20px #00ffc3;
+    font-weight: 500;
+    z-index: 1;
+
+}
+
+.colunaText {
+
+
+    display: flex;
+    color: #FFF;
+    text-align: center;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.container-contact {
+
+    display: flex;
+    margin-left: 10%;
+    margin-top: 2%;
+
+}
+
+.pages {
+    display: flex;
+    flex-direction: column;
+    width: 13%;
+    margin-left: 5%;
+    margin-top: 1.5%;
+}
+
+.pagin {
+    display: flex;
+    color: #FFF;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 20%;
+    margin-left: -20%;
+    align-items: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: color 0.4s, transform 0.4s; /* Adiciona a transição de transform */
+}
+
+.pagin:hover {
+    color: #00ffc3;
+    text-shadow: 0px 3px 7px  #159376;
+    transform: scale(1.1); /* Aumenta o tamanho em 5% ao passar o mouse */
+}
+
+.images-link {
+    display: flex;
+    flex-direction: column;
+}
+
+.images-link img {
+    margin-bottom: 40%; 
+}
+
+
+
+.line-horizont {
+
+
+    display: flex;
+    width: 0.2%;
+    margin-top: -3%;
+    margin-left: -4%;
+    height: 180px;
+    stroke-width: 2px;
+    background-color: #7BDCC5;
+    transform: rotate(0.468deg);
+    flex-shrink: 0;
+
+}
+.descrition-fotter {
+    display: flex;
+    font-size: 19px;
+    font-weight: 400;
+    color: #d6d3d3;
+    width: 60%;
+    height: 180px;
+    align-items: center;
+    margin-top: -3%;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+.descrition-fotter::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background-image: linear-gradient(to right, #1efeca2d, #15151700);
+    background-size: 200% 100%;
+    background-position: 200%;
+    opacity: 0; 
+    transition: opacity 0.7s, background-position 0.5s;
+    z-index: -1;
+}
+
+.descrition-fotter:hover::before {
+    opacity: 1;
+    background-position: 100%;
+}
+
+.descrition-fotter:hover {
+    color: #2ff8c9;
+    transition: color 0.5s;
+}
+
+/* Adicione o seguinte código para afastar o texto ao passar o mouse */
+.descrition-fotter:hover .text-f {
+    transform: translateX(4%); /* Afasta o texto 4% para a direita */
+    transition: transform 0.5s;
+}
+
+/* Adicione o seguinte código para fazer o texto voltar lentamente quando o mouse é retirado */
+.descrition-fotter .text-f {
+    transform: translateX(0); /* Mantém o texto na posição inicial */
+    margin-left: 2%;
+    transition: transform 1s;
+}
+
+.logo-az{
+    display: flex;
+    margin-top: -3%;
+    margin-right:10%;
+}
