@@ -1,41 +1,188 @@
 <!DOCTYPE html>
-<html lang="pt-br"
+
+<html lang="pt-br">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Projeto azura</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/backgroundLandingPage2.css">
+    <link rel="stylesheet" href="style/FornecedoresEquipePage.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 </head>
-<body>
-<section class="landingPage2">
-    <section class="FornecedoresEquipePage">
-        <div class="gradientForest">
-            <div class="carouselFornecedores"></div>
-            <picture id="gradientFundo"></picture>
-            <img  id="forest" src="img/forest.png" alt="">
-        </div>
-        <picture id="blockBlackForest"></picture>
-        <div id="CarouselEquipe">
 
-        </div>
-    </section>
-    
-    <section class="footer">
-        <nav class="navFooter">
-            <div class="headerInFooter">
-                <p class="lineFooter"></p>
-                <a href="https://www.shutterstock.com/shutterstock/photos/656442955/display_1500/stock-photo-the-chief-cries-before-sitting-in-front-of-laptop-656442955.jpg">denuncie aqui</a>
-                <a href="https://www.shutterstock.com/shutterstock/photos/656442955/display_1500/stock-photo-the-chief-cries-before-sitting-in-front-of-laptop-656442955.jpg">seja voluntario</a>
-                <a href="https://www.shutterstock.com/shutterstock/photos/656442955/display_1500/stock-photo-the-chief-cries-before-sitting-in-front-of-laptop-656442955.jpg">blog</a>
-                <a href="https://www.shutterstock.com/shutterstock/photos/656442955/display_1500/stock-photo-the-chief-cries-before-sitting-in-front-of-laptop-656442955.jpg">equipe</a>
-                <a href="https://www.shutterstock.com/shutterstock/photos/656442955/display_1500/stock-photo-the-chief-cries-before-sitting-in-front-of-laptop-656442955.jpg">home</a>
+<body>
+    <section class="landingPage2">
+        <section class="backgroundLandingPage2">
+            <picture id="gradientFundo">
+                <img src="img/forest.png" alt="">
+                <div class="imagensFornecedores">
+                    <div class="imagensFornecedoresLateral">
+                        <card-fotos class="img_lateral_fornecedores"
+                            image="https://www.shutterstock.com/image-photo/chief-cries-before-sitting-front-260nw-656442955.jpg"
+                            text="paputs"></card-fotos>
+                    </div>
+                    <card-fotos id="img_central_fornecedores"
+                        image="https://www.shutterstock.com/image-photo/chief-cries-before-sitting-front-260nw-656442955.jpg"
+                        text="paputs"></card-fotos>
+                    <div class="imagensFornecedoresLateral">
+
+                        <card-fotos class="img_lateral_fornecedores"
+                            image="https://www.shutterstock.com/image-photo/chief-cries-before-sitting-front-260nw-656442955.jpg"
+                            text="paputs"></card-fotos>
+                    </div>
+                </div>
+            </picture>
+            <picture id="blockBlackForest">
+                <div class="slider-container swiper mySwiper">
+                    <div class="carouselWrapper swiper-wrapper">
+                        <div class="carouselEquipe">
+
+                            <card-equipe id="card1"
+                            image="https://www.shutterstock.com/image-photo/chief-cries-before-sitting-front-260nw-656442955.jpg"
+                            name="TESTECARALHOS"
+                            text="Fiz trabalho voluntário na coleta de lixo do Projeto Azura e foi muito
+                            gratificante.
+                            Contribuí para um mundo mais sustentável e conheci pessoas incríveis.">
+                            </card-equipe>
+
+                            <card-equipe id="card2"
+                            image="https://www.shutterstock.com/image-photo/chief-cries-before-sitting-front-260nw-656442955.jpg"
+                            name="TESTECARALHOS"
+                            text="Fiz trabalho voluntário na coleta de lixo do Projeto Azura e foi muito
+                            gratificante.
+                            Contribuí para um mundo mais sustentável e conheci pessoas incríveis."></card-equipe>
+                            
+                            <card-equipe id="card3"
+                            image="https://www.shutterstock.com/image-photo/chief-cries-before-sitting-front-260nw-656442955.jpg"
+                            name="TESTECARALHOS"
+                            text="Fiz trabalho voluntário na coleta de lixo do Projeto Azura e foi muito
+                            gratificante.
+                            Contribuí para um mundo mais sustentável e conheci pessoas incríveis."></card-equipe>
+
+
+
+                            <!-- <card-equipe id="card4"
+                            image="https://www.shutterstock.com/image-photo/chief-cries-before-sitting-front-260nw-656442955.jpg"
+                            name="TESTECARALHOS"
+                            text="Fiz trabalho voluntário na coleta de lixo do Projeto Azura e foi muito
+                            gratificante.
+                            Contribuí para um mundo mais sustentável e conheci pessoas incríveis."></card-equipe>
+
+                            <card-equipe id=card5
+                            image="https://www.shutterstock.com/image-photo/chief-cries-before-sitting-front-260nw-656442955.jpg"
+                            name="TESTECARALHOS"
+                            text="Fiz trabalho voluntário na coleta de lixo do Projeto Azura e foi muito
+                            gratificante.
+                            Contribuí para um mundo mais sustentável e conheci pessoas incríveis."></card-equipe> -->
+
+
+
+                            <!-- <div class="item swiper-slide">
+                                <img id="equipe-image"
+                                    src="https://www.shutterstock.com/image-photo/chief-cries-before-sitting-front-260nw-656442955.jpg"
+                                    alt="Card Image">
+                                <div class="cardEquipe card2">
+                                    <h1>TESTE1</h1>
+                                    <p>Fiz trabalho voluntário na coleta de lixo do Projeto Azura e foi muito
+                                        gratificante.
+                                        Contribuí para um mundo mais sustentável e conheci pessoas incríveis.</p>
+                                    <div class="imagesLinkEquipe">
+                                        <img src="/img/facebook.png" alt="">
+                                        <img src="/img/instagram.png" alt="">
+                                    </div>
+                                    <a href="#" class="paginEquipe">Facebook</a>
+                                    <a href="#" class="paginEquipe">Instragram</a>
+                                </div>
+                            </div>
+
+                            <div class="item swiper-slide">
+                                <img id="equipe-image"
+                                    src="https://www.shutterstock.com/image-photo/chief-cries-before-sitting-front-260nw-656442955.jpg"
+                                    alt="Card Image">
+                                <div class="cardEquipe card3">
+                                    <h1>TESTE1</h1>
+                                    <p>Fiz trabalho voluntário na coleta de lixo do Projeto Azura e foi muito
+                                        gratificante.
+                                        Contribuí para um mundo mais sustentável e conheci pessoas incríveis.</p>
+                                    <div class="imagesLinkEquipe">
+                                        <img src="/img/facebook.png" alt="">
+                                        <img src="/img/instagram.png" alt="">
+                                    </div>
+                                    <a href="#" class="paginEquipe">Facebook</a>
+                                    <a href="#" class="paginEquipe">Instragram</a>
+
+                                </div> -->
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                
+                </div>
+                
+            </picture>
+        </section>
+
+
+
+        <!-- FOOTER -->
+
+        <div class="fotter">
+            <div class="align-line-fotter">
+                <h1 class="line-fotter"></h1>
+
             </div>
-        </nav>
-        <div class="contatoFooter">
-        abuble
-        </div> 
+
+            <div class="block-var-fotter">
+                <a class="var-fotter" href="#">HOME </a>
+                <a class="var-fotter" href="#">EQUIPE</a>
+                <a class="var-fotter" href="#">BLOG</a>
+                <a class="var-fotter-voluntario" href="#">SEJA UM VOLUNTÁRIO</a>
+                <a class="var-fotter" href="#">DENUNCIE AQUI</a>
+            </div>
+            <div class="container-contact">
+                <h1 class="colunaText">CONTATO</h1>
+            </div>
+
+            <nav class="nav-footer" style="display: flex; margin-left: 7%; margin-top: 2%;">
+                <div class="images-link">
+                    <img src="/img/facebook.png" alt="">
+                    <img src="/img/instagram.png" alt="">
+                </div>
+
+                <div class="pages">
+                    <a href="#" class="pagin">Facebook</a>
+                    <a href="#" class="pagin">Instragram</a>
+                </div>
+
+                <nav class="line-horizont"></nav>
+
+                <div class="descrition-fotter">
+                    <h class="text-f">O Projeto Azura é uma ONG sem fins<br>lucrativos que tem como objetivo cuidar
+                        do<br> meio
+                        ambiente através do plantio de<br> árvores e da coleta de lixo.</h1>
+                </div>
+
+                <div class="logo-az">
+                    <img src="/img/azura-logo 3.png" alt="">
+                </div>
+            </nav>
     </section>
-</section>
 </body>
-<script src="/js/paputs.js"></script>
+<script src="./js/carouselEquipe.js"></script>
+<script src="js/cardEquipe.js"></script>
+<script src="/js/cardFotos.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+
+</html>

@@ -1,17 +1,13 @@
-var $owl = $('.owl-carousel');
-
-$owl.children().each( function( index ) {
-  $(this).attr( 'data-position', index ); // NB: .attr() instead of .data()
-});
-
-$owl.owlCarousel({
-  center: true,
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
   loop: true,
-  items: 3,
-});
-
-$(document).on('click', '.owl-item>div', function() {
-  // see https://owlcarousel2.github.io/OwlCarousel2/docs/api-events.html#to-owl-carousel
-  var $speed = 550;  // in ms
-  $owl.trigger('to.owl.carousel', [$(this).data( 'position' ), $speed] );
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });
