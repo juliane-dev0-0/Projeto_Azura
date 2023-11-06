@@ -45,41 +45,14 @@
   margin-top: 18px; /* Adjust margin as needed */
 }
 
-/* 
-.carousel {
-  overflow: hidden;
-}
-  
-.carousel-container {
-  display: flex;
-  transition: transform 0.3s;
-}
-  
-.carousel-item {
-  flex: 0 0 100%;
-  width: 100%;
-  text-align: center;
-}
-  
-#prevButton, #nextButton {
-  cursor: pointer;
-} */
-
 .slider-container{
   width: 100%;
   max-width: 1120px;
   padding: 40px 0;
 }
-
+/* 
 .carouselEquipe{
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.carouselWrapper{
-  justify-content: center;
-}
+} */
 
 .button-left, .button-right{
   position: absolute;
@@ -95,14 +68,14 @@
   position: relative; 
   display: flex !important; 
   flex-direction: column;
-  align-content: center;
+  align-items: center;
   height: auto;
 }
 
 #equipe-image{
   position: absolute;
-  height: 100px;
-  width: 100px;
+  height: 15%;
+  max-width: 100%;
   border-radius: 50%;
   align-self: center;
   justify-self: flex-end;
@@ -110,7 +83,6 @@
 
 
 .cardEquipe{
-  margin: 0 30px;
   flex-direction: column;
   flex-wrap: wrap;
   display: flex;

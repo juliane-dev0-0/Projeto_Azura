@@ -1,7 +1,7 @@
 class cardEquipe extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-<div class="item swiper-slide">
+<div class="item">
     <img id="equipe-image"
         src="${this.getAttribute('image')}"
         alt="Card Image">
