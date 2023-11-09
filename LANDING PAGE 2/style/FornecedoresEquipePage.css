@@ -26,8 +26,8 @@
 }
 
 .card-image { /* Set the width of the image */
-  width: 300px; /* Maintain aspect ratio */
-  height: 200px;
+  width: 350px; /* Maintain aspect ratio */
+  height: 250px;
   border-radius: 3%;
   box-shadow: 5px 6px 10px 0px rgba(0, 0, 0, 0.75);
   transition: 0.6s;
@@ -61,9 +61,7 @@
 .slider-container{
   width: 100%;
   max-width: 1120px;
-  padding: 40px 0 !important;
-  padding-left: 60px !important;
-  padding-right: 10px !important; 
+  padding: 40px 20px !important;
 }
 
 .carouselEquipe{
@@ -74,7 +72,7 @@
 
 .item
 {
-  margin: 0 10px;
+  margin: 0 40px;
   position: relative; 
   display: flex !important;
   justify-content: space-between; 
