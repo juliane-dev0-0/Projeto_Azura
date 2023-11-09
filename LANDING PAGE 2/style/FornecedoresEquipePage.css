@@ -1,18 +1,11 @@
 .imagensFornecedores{
-  display: flex;
   width: 100%;
-}
-
-.imagensFornecedoresLateral{
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 20px;
-}
-
-.img_lateral_fornecedores img{
-  height: 175px;
-  width: auto;
-  border-radius: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 300px;
+  top: 20%
 }
 
 .card-fotos {
@@ -20,62 +13,82 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  margin-left: 50px;
+  margin-right: 50px;
+  transition: 0.6s; 
 }
 
-.card-image:hover{
-  transform: scale(1.08);
-  transition: 0.6s;
-}
-
-.card-fotos p{
+.card-text{
   color: rgba(218, 217, 217, 1);
-  font-size: 15px;
+  font-size: 10px;
+  transition: 0.6s
 }
 
 .card-image { /* Set the width of the image */
-  width: 500px; /* Maintain aspect ratio */
-  height: 300px;
+  width: 300px; /* Maintain aspect ratio */
+  height: 200px;
   border-radius: 3%;
   box-shadow: 5px 6px 10px 0px rgba(0, 0, 0, 0.75);
+  transition: 0.6s;
 }
 
 .card-line {
-  width: 105%; /* Set the width of the line (adjust as needed) */
+  width: 95%; /* Set the width of the line (adjust as needed) */
   border-bottom: 2px solid#1CB398; /* Define line appearance */
   margin-top: 18px; /* Adjust margin as needed */
+  transition: 0.6s;
 }
+
+.card-fotos:hover{
+  transform:scale(1.5);
+  transition: 0.6s;
+  .card-line{
+    width: 105%;
+    border-bottom: 2px solid #1CB398; /* Define line appearance */
+    margin-top: 10px; /* Adjust margin as needed */ 
+  };
+  .card-text{
+    font-size: 12px;
+    transition: 0.6s
+  };
+}
+
+/* 
+                         carouselEquipe{
+} */
 
 .slider-container{
   width: 100%;
   max-width: 1120px;
-  padding: 40px 0;
+  padding: 40px 0 !important;
+  padding-left: 60px !important;
+  padding-right: 10px !important; 
 }
-/* 
+
 .carouselEquipe{
-} */
-
-.button-left, .button-right{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: auto;
-  left: 0;
-
+  margin: 0 -10px;
+  display: flex;
+  align-content: center;
 }
 
 .item
 {
+  margin: 0 10px;
   position: relative; 
-  display: flex !important; 
+  display: flex !important;
+  justify-content: space-between; 
   flex-direction: column;
   align-items: center;
-  height: auto;
+  width: 300px;
+  transition: 0.2s;
+  
 }
 
 #equipe-image{
   position: absolute;
-  height: 15%;
-  max-width: 100%;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
   align-self: center;
   justify-self: flex-end;
@@ -83,9 +96,6 @@
 
 
 .cardEquipe{
-  flex-direction: column;
-  flex-wrap: wrap;
-  display: flex;
   margin-top: 60px;
   background-color: #1CB398;
   width: 300px;
@@ -93,9 +103,32 @@
   margin-bottom: 50px;
   border-radius: 3%;
   transition: margin 0.4s ease;
-  background-color: rgba(12, 116, 85, 1);
+  transition: 0.2s;
+}
+
+/* Carousel Equipe destaque tipo 1; */
+/* .cardEquipe:hover{
+  transition: 0.2s;
   border: 1px solid #EDE5E5;
-  box-shadow: 0px 0px 30px -5px #0DFFB5;
+}
+
+.item:hover{
+  transform: scale(1.08);
+  transition: 0.6s;
+} */
+
+/* Carousel Equipe destaque tipo 2; */
+.swiper-slide-next{
+  z-index: 1;
+  .cardEquipe{
+  transition: 0.2s;
+  border: 1px solid #EDE5E5;
+  }
+  .item{
+    transform: scale(1.08);
+    transition: 0.6s;
+  }
+  
 }
 
 .cardEquipe h1{
@@ -118,12 +151,17 @@
   font-size: 18px;
 }
 
-#card1 .cardEquipe{
+#cardPurple .cardEquipe{
   background-color: #786E9C;
   box-shadow: 0px 0px 30px -5px #A38FEB;
 }
 
-#card3 .cardEquipe{
+#cardOrange .cardEquipe{
   background-color: #AA7E3C;
   box-shadow: 0px 0px 30px -5px #FFA113;
+}
+
+#cardGreen .cardEquipe{
+  background-color: rgba(12, 116, 85, 1);
+  box-shadow: 0px 0px 30px -5px #0DFFB5;
 }

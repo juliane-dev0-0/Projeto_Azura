@@ -19,18 +19,11 @@
         min-height: 800px;
     }
 
-    
-    #gradientFundo > .imagensFornecedores{
-        position: absolute;
-        top: 10%;
-        display: flex;
-        justify-content: center;
-    }
-
     #gradientFundo > img
     {
         align-self: flex-end;
         object-fit: cover;
+        overflow-x: hidden;
         height: 266px;
     }
 
