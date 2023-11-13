@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Pragati+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&family=Pragati+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Pragati+Narrow&display=swap');
+.imagensFornecedores{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 300px;
+  top: 20%
+}
+
+.card-fotos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  margin-left: 50px;
+  margin-right: 50px;
+  transition: 0.6s; 
+}
+
+.card-text{
+  color: rgba(218, 217, 217, 1);
+  font-size: 10px;
+  transition: 0.6s
+}
+
+.card-image { /* Set the width of the image */
+  width: 350px; /* Maintain aspect ratio */
+  height: 250px;
+  border-radius: 3%;
+  box-shadow: 5px 6px 10px 0px rgba(0, 0, 0, 0.75);
+  transition: 0.6s;
+}
+
+.card-line {
+  width: 95%; /* Set the width of the line (adjust as needed) */
+  border-bottom: 2px solid#1CB398; /* Define line appearance */
+  margin-top: 18px; /* Adjust margin as needed */
+  transition: 0.6s;
+}
+
+.card-fotos:hover{
+  transform: scale(1.35);
+  transition: 0.6s;
+  .card-line{
+    width: 105%;
+    border-bottom: 2px solid #1CB398; /* Define line appearance */
+    margin-top: 10px; /* Adjust margin as needed */ 
+  };
+  .card-text{
+    font-size: 12px;
+    transition: 0.6s
+  };
+}
+
+/* 
+                         carouselEquipe{
+} */
+
+.slider-container{
+  width: 100%;
+  max-width: 1120px;
+  padding: 40px 20px !important;
+}
+
+.carouselEquipe{
+  margin: 0 -10px;
+  display: flex;
+  align-content: center;
+}
+
+.item
+{
+  margin: 0 40px;
+  position: relative; 
+  display: flex !important;
+  justify-content: space-between; 
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  transition: 0.2s;
+  
+}
+
+#equipe-image{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  align-self: center;
+  justify-self: flex-end;
+}
+
+
+.cardEquipe{
+  margin-top: 60px;
+  background-color: #1CB398;
+  width: 300px;
+  height: 500px;
+  margin-bottom: 50px;
+  border-radius: 3%;
+  transition: margin 0.4s ease;
+  transition: 0.2s;
+}
+
+/* Carousel Equipe destaque tipo 1; */
+/* .cardEquipe:hover{
+  transition: 0.2s;
+  border: 1px solid #EDE5E5;
+}
+
+.item:hover{
+  transform: scale(1.08);
+  transition: 0.6s;
+} */
+
+/* Carousel Equipe destaque tipo 2; */
+.swiper-slide-next{
+  z-index: 1;
+  .cardEquipe{
+  transition: 0.2s;
+  border: 1px solid #EDE5E5;
+  }
+  .item{
+    transform: scale(1.08);
+    transition: 0.6s;
+  }
+  
+}
+
+.cardEquipe h1{
+  padding-top: 35px;
+  padding-bottom: 60px;
+  text-align: center;
+  color: #000;
+
+  text-anchor: end;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.cardEquipe p{
+  display: flex;
+  padding-bottom: 60px;
+  text-align: center;
+  font-size: 18px;
+}
+
+#cardPurple .cardEquipe{
+  background-color: #786E9C;
+  box-shadow: 0px 0px 30px -5px #A38FEB;
+}
+
+#cardOrange .cardEquipe{
+  background-color: #AA7E3C;
+  box-shadow: 0px 0px 30px -5px #FFA113;
+}
+
+#cardGreen .cardEquipe{
+  background-color: rgba(12, 116, 85, 1);
+  box-shadow: 0px 0px 30px -5px #0DFFB5;
+}
