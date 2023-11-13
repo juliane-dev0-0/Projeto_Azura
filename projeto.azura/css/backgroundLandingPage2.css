@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Pragati+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500&family=Pragati+Narrow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Pragati+Narrow&display=swap');
+.backgroundLandingPage2{    
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    object-fit: cover;
+    overflow-x: hidden;
+}
+    /* BACKGROUND */
+
+    #gradientFundo{
+        position: relative;
+        background-image: linear-gradient(180deg, #238A71 0%, #104747 54.58%, #092933 72.81%, #001018 87.4%, #000 100%);
+        display: flex;
+        justify-content: center;
+        min-height: 800px;
+        box-shadow: -24px 168px 75px -134px rgba(1,11,22,1) inset;
+        z-index: 9;
+    }
+
+    
+    #gradientFundo > .imagensFornecedores{
+        position: absolute;
+        top: 10%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #gradientFundo > img
+    {
+        align-self: flex-end;
+        object-fit: cover;
+        height: 266px;
+    }
+
+    #blockBlackForest
+    {
+        height: 700px;
+        background-color: #000;
+    }
+
+    @media screen and (min-width:1200px){
+        #gradientFundo > img{
+            width: 110%;
+        }
+        
+    } 
