@@ -56,6 +56,8 @@ EQUIPE
 
 # O que cada um fez no Projeto 
 > Juliane: Landing page (primeira e segunda parte), formulário de envio por excel, formulário de denuncia
+
 > João: Landing page (terceira e quarta parte), termo de denúncia
+
 > Lucas: Formulário de voluntário, footer, header
 	
