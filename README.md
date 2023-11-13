@@ -1,6 +1,10 @@
 # Projeto_Azura
 
-# SCRIPT AZURA
+> link de formulario de denúncia (excel) : https://docs.google.com/spreadsheets/d/146ju4TflyQO5DqThQXo6z-DHo10ZSRelOsIpIbsyXKM/edit#gid=0
+
+> link de formulário de voluntário (Excel): https://docs.google.com/spreadsheets/d/1A73_e7Wc-ytPiBpYJ2ATIFfxEMDNp6qKjnDUPlgOjJA/edit#gid=0
+
+
 	Azura , uma ONG inspirada pela vontade de fazer a natureza permanecer segura.
 
 Em nossa ONG, combinamos tecnologias e conhecimentos ambientais para levantar informaçoes sobre áreas que precisam de nossa ajuda, atraves de denuncias e contato com outras ongs. 
