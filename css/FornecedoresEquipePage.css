@@ -39,7 +39,7 @@
 .card-line {
   width: 95%; /* Set the width of the line (adjust as needed) */
   border-bottom: 2px solid#1CB398; /* Define line appearance */
-  margin-top: 18px; /* Adjust margin as needed */
+  margin-top: 18px; /* Adjust margin as needed */ 
   transition: 0.6s;
 }
 
@@ -165,4 +165,33 @@
 #cardGreen .cardEquipe{
   background-color: rgba(12, 116, 85, 1);
   box-shadow: 0px 0px 30px -5px #0DFFB5;
+}
+
+#instagramImg{
+  width: 51px; 
+}
+
+#emailImg{
+  width: 50px;
+}
+
+#arrobaInstagram{
+
+}
+
+.redesSociais{
+  display: flex;
+  justify-content: space-around;
+}
+
+.instagramDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.emailDiv{
+  display: flex;
+  flex-direction: column;
+  align-items: center
 }
