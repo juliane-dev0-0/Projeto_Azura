@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/button-envie.css">
+    <link rel="stylesheet" href="/css/modalDenuncia.css">
 
     <!-- <link rel="stylesheet" href="script.js"> -->
 
@@ -15,7 +16,7 @@
 
 <body>
 
-    <section >
+    <section>
 
         <header class="cabecalho">
 
@@ -26,108 +27,122 @@
 
             <a class="button" href="/index.html">HOME </a>
             <a class="button" href="/index.html">EQUIPE</a>
-            <a class="button" href="/index.html">BLOG</a>
             <a class="button" href="/html/voluntario.html">SEJA UM VOLUNTÁRIO</a>
             <a class="denuncia" href="/html/denuncia.html">DENUNCIE AQUI</a>
 
         </header>
 
-      
-        
+
+
         <h1 class="linha1"> </h1>
         <div class="texto1">
-          
+
             <h1>INSIRA SUA DENÚNCIA</h1>
         </div>
         <div style="margin-left: 15%;">
 
-        <!-- colunas/ NOME-IDADE -->
-        <form id="meuFormulario">
+            <!-- colunas/ NOME-IDADE -->
+            <form id="meuFormulario">
 
 
-            <div class="colunas">
+                <div class="colunas">
 
-                <div class="colums1">
+                    <div class="colums1">
 
-                    <div style="width: 34%;">
-                        <label class="fonteNome">
-                            NOME -
-                            <span style="margin-right: 5px;"></span>  
-                            <bold style=" font-family: 'Inter', sans-serif; font-style: italic; color: #00FFC2; font-size: 14px;"> OPCIONAL </bold>
+                        <div style="width: 34%;">
+                            <label class="fonteNome">
+                                NOME -
+                                <span style="margin-right: 5px;"></span>
+                                <bold
+                                    style=" font-family: 'Inter', sans-serif; font-style: italic; color: #00FFC2; font-size: 14px;">
+                                    OPCIONAL </bold>
 
+                            </label>
+
+                            <input class="imput-nome" id="nome" type="text">
+                            <h1 class="imput-line-nome"></h1>
+                        </div>
+
+                        <div class="imput-fn">
+                            <div>
+                                <label class="fonteNome">DATA</label>
+                                <input class="imput-data" id="data" type="date">
+                                <h1 class="imput-line-data"></h1>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="phoneblock denu">
+
+                        <label class="contato" for="tel"> CONTATO -
+                            <span style="margin-right: 5px;"></span>
+                            <bold
+                                style=" font-family: 'Inter', sans-serif; font-style: italic; color: #00FFC2; font-size: 14px;">
+                                OPCIONAL </bold>
                         </label>
-                        
-                        <input class="imput-nome" id="nome" type="text">
+
+                        <input placeholder="(00) 0 0000-0000" id="contato" class="modelPhone" type="tel" maxlength="15"
+                            onkeyup="handlePhone(event)" />
+                    </div>
+
+                    <div class="local" tyle="width: 34%;">
+                        <label class="fonteNome">LOCAL DA DENÚNCIA</label>
+                        <input class="imput-nome" id="local_denuncia" type="text">
+                        <h1 class="imput-line-nome"></h1>
+
+                    </div>
+
+                    <div class="titulo" style="width: 34%;">
+                        <label class="fonteNome">TÍTULO</label>
+                        <input class="imput-nome" id="titulo" type="text">
                         <h1 class="imput-line-nome"></h1>
                     </div>
 
-                    <div class="imput-fn">
-                        <div>
-                            <label class="fonteNome">DATA</label>
-                            <input class="imput-data" id="data" type="date">
-                            <h1 class="imput-line-data"></h1>
-                        </div>
+
+                    <div class="form-group">
+                        <label class="fonteNome">DESCRIÇÃO</label>
+                        <textarea class="form-control" id="descricao"></textarea>
+
                     </div>
 
+
                 </div>
-
-
-                <div class="phoneblock denu">
-                    
-                    <label class="contato" for="tel"> CONTATO -
-                        <span style="margin-right: 5px;"></span>  
-                        <bold style=" font-family: 'Inter', sans-serif; font-style: italic; color: #00FFC2; font-size: 14px;"> OPCIONAL </bold>
-                    </label>
-                    
-                    <input placeholder="(00) 0 0000-0000" id="contato" class="modelPhone" type="tel" maxlength="15"
-                        onkeyup="handlePhone(event)" />
-                </div>
-          
-        <div class="local" tyle="width: 34%;">
-            <label class="fonteNome">LOCAL DA DENÚNCIA</label>
-            <input class="imput-nome" id="local_denuncia" type="text">
-            <h1 class="imput-line-nome"></h1>
-
-        </div>
-
-        <div class="titulo" style="width: 34%;">
-            <label class="fonteNome">TÍTULO</label>
-            <input class="imput-nome" id="titulo" type="text">
-            <h1 class="imput-line-nome"></h1>
-        </div>
-
-
-        <div class="form-group">
-            <label class="fonteNome">DESCRIÇÃO</label>
-            <textarea class="form-control" id="descricao"></textarea>
-
-        </div>
-
-
-    </div>
+            </form>
     </section>
 
 
+    <button id="buttonEnvieFormulario" onclick="modal.showModal()">ENVIAR</button>
 
+    <dialog>
+        <div class="tituloModal">
+            <h2>TERMO DE DENÚNCIA</h2>
+        </div>
+        <p>Entendo que minhas informações pessoais são opcionais e serão tratadas de maneira confidencial. Elas serão utilizadas apenas para fins de pesquisa interna do Projeto Azura e não serão divulgadas a terceiros. O Projeto Azura assegura que a minha denúncia permanecerá anônima e que meus dados pessoais não serão utilizados para qualquer fim que não esteja diretamente relacionado à finalidade desta denúncia.<br/><br/>
 
-    
+            Estou ciente de que minha colaboração é valiosa para a promoção de ações em prol do meio ambiente, e agradeço a oportunidade de contribuir para a missão do Projeto Azura.
 
-
-    <button id="buttonEnvie">ENVIAR</button>
-
+            <br/><br/>Projeto Azura, promovendo a conscientização e preservação ambiental.</p>
+        <div class="lineModal"></div>
+        <div class="opcoesModal">
+            <a href="#">Retornar a denuncia</a>
+            <button id="buttonEnvie">ENVIAR</button>
+        </div>
+    </dialog>
 
     <script>
         document.getElementById("buttonEnvie").addEventListener("click", async function () {
-            
+
             await new Promise(resolve => setTimeout(resolve, 1000));
             window.location.href = "confirmEnvio.html";
         });
 
     </script>
-    
-</form>
 
-    
+    </form>
+
+
 
     </section>
 
@@ -143,7 +158,6 @@
             <div class="block-var-fotter">
                 <a class="var-fotter" href="/index.html">HOME </a>
                 <a class="var-fotter" href="/index.html">EQUIPE</a>
-                <a class="var-fotter" href="#">BLOG</a>
                 <a class="var-fotter-voluntario" href="/html/voluntario.html">SEJA UM VOLUNTÁRIO</a>
                 <a class="var-fotter" href="/html/denuncia.html" style="color: aquamarine;">DENUNCIE AQUI</a>
             </div>
@@ -153,12 +167,12 @@
 
             <nav class="nav-footer" style="display: flex; margin-left: 7%; margin-top: 2%;">
                 <div class="images-link">
-                    <img src="/img/facebook.png" alt="">
-                    <img src="/img/instagram.png" alt="">
+                    <img src="https://static-00.iconduck.com/assets.00/mail-icon-2018x2048-0bkdtuf1.png" alt="">
+                    <img src="https://images.squarespace-cdn.com/content/v1/6019512eb9d45c40215337ea/f62e27ce-929f-46f1-8710-4d8e7cdfc2eb/logo-instagram-branco.png" alt="">
                 </div>
 
                 <div class="pages">
-                    <a href="#" class="pagin">Facebook</a>
+                    <a href="#" class="pagin">E-mail</a>
                     <a href="#" class="pagin">Instragram</a>
                 </div>
 
@@ -179,6 +193,24 @@
 </body>
 
 <script src="/js/enviar_denuncia.js"></script>
+<script>
+    const button = document.getElementById("buttonEnvieFormulario")
+    const modal = document.querySelector("dialog")
+    const buttonClose = document.querySelector("dialog a")
 
+    console.log(button)
+    console.log(modal)
+    console.log(buttonClose)
+
+    button.onclick = function () {
+        modal.showModal()
+    };
+
+    buttonClose.onclick = function () {
+        modal.close()
+    };
+
+
+</script>
 
 </html>

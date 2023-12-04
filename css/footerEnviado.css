@@ -95,7 +95,7 @@
 
     display: flex;
     text-decoration: none;
-    color: #68EFC9;
+    color: #F6F6F6;
     font-size: 14px;
     white-space: nowrap;
     font-style: normal;
@@ -172,6 +172,7 @@
 
 .images-link img {
     margin-bottom: 40%; 
+    height: 40px;
 }
 
 
@@ -248,6 +249,4 @@
     display: flex;
     margin-top: -3%;
     margin-right:10%;
-  
-
 }

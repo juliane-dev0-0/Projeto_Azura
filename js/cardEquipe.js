@@ -12,12 +12,12 @@ class cardEquipe extends HTMLElement {
           <div class="instagramDiv">
             <img id="instagramImg"
               src="https://images.squarespace-cdn.com/content/v1/6019512eb9d45c40215337ea/f62e27ce-929f-46f1-8710-4d8e7cdfc2eb/logo-instagram-branco.png">
-            <h5 id="redesSociaisLinks">${this.getAttribute('arrobaInstagram')}</h5>
+            <a href="#" id="redesSociaisLinks">${this.getAttribute('arrobaInstagram')}</a>
           </div>
           <div class="emailDiv">
             <img id="emailImg"
               src="https://static-00.iconduck.com/assets.00/mail-icon-2018x2048-0bkdtuf1.png">
-            <h5 id="redesSociaisLinks">${this.getAttribute('arrobaEmail')}</h5>
+            <a href="#" id="redesSociaisLinks">${this.getAttribute('arrobaEmail')}</a>
           </div>
         </div>
     </div>

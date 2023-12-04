@@ -168,30 +168,40 @@
 }
 
 #instagramImg{
-  width: 51px; 
+  width: 40px;
+  filter: drop-shadow(0px 3px 15px rgba(7, 19, 14, 0.649));
 }
 
 #emailImg{
-  width: 50px;
-}
-
-#arrobaInstagram{
-
+  width: 40px;
+  filter: drop-shadow(0px 3px 15px rgba(7, 19, 14, 0.649));
 }
 
 .redesSociais{
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-content: space-around;
+  flex-wrap: wrap;
 }
 
 .instagramDiv{
   display: flex;
-  flex-direction: column;
-  align-items: center
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 0px;
 }
 
 .emailDiv{
   display: flex;
-  flex-direction: column;
-  align-items: center
+  flex-direction: row;
+  align-items: center;
+  margin: 5px 0px;
+}
+
+.redesSociais a{
+  margin: 0px 20px;
+  color: #f6f6f6;
+  font-weight: 250;
+  text-decoration-line: none;
+  font-size: 12px;
 }
